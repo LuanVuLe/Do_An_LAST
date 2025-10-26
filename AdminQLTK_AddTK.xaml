@@ -1,0 +1,31 @@
+﻿<Window x:Class="Do_An.AdminQLTK_AddTK"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Thông tin tài khoản" Height="300" Width="400" WindowStartupLocation="CenterOwner">
+    <Grid Margin="10">
+        <StackPanel>
+            <TextBlock Text="Tên đăng nhập"/>
+            <TextBox x:Name="txtTenDN" Margin="0,5"/>
+
+            <TextBlock Text="Họ tên"/>
+            <TextBox x:Name="txtHoTen" Margin="0,5"/>
+
+            <TextBlock Text="Mật khẩu"/>
+            <PasswordBox x:Name="txtMatKhau" Margin="0,5"/>
+
+            <TextBlock Text="Quyền"/>
+            <ComboBox x:Name="cboQuyen" Margin="0,5"/>
+
+            <CheckBox x:Name="chkTrangThai" 
+                      Content="Tài khoản đang hoạt động" 
+                      Margin="0,15,0,0" 
+                      IsChecked="True" 
+                      FontWeight="Bold"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10">
+            <Button Content="Lưu" Width="80" Margin="5" Click="BtnLuu_Click"/>
+            <Button Content="Hủy" Width="80" Margin="5" IsCancel="True"/>
+        </StackPanel>
+    </Grid>
+</Window>

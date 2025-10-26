@@ -1,0 +1,32 @@
+﻿<Window x:Class="Do_An.AdminQLLH_AddLH"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Nhập lớp học" Height="300" Width="400"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Mã lớp:" Grid.Row="0" Margin="0,0,0,6"/>
+        <TextBox x:Name="txtID" Grid.Row="0" Margin="80,0,0,6" Width="250" IsReadOnly="True"/>
+
+        <TextBlock Text="Tên lớp:" Grid.Row="1" Margin="0,0,0,6"/>
+        <TextBox x:Name="txtTenLop" Grid.Row="1" Margin="80,0,0,6" Width="250"/>
+
+        <TextBlock Text="Giáo viên:" Grid.Row="2" Margin="0,0,0,6"/>
+        <TextBox x:Name="txtGiaoVien" Grid.Row="2" Margin="80,0,0,6" Width="250"/>
+
+        <TextBlock Text="Số học viên:" Grid.Row="3" Margin="0,0,0,6"/>
+        <TextBox x:Name="txtSoHocVien" Grid.Row="3" Margin="80,0,0,6" Width="250"/>
+
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+            <Button x:Name="btnLuu" Content="💾 Lưu" Width="100" Height="35" Margin="10,0" Click="btnLuu_Click"/>
+            <Button x:Name="btnHuy" Content="❌ Hủy" Width="100" Height="35" Margin="10,0" Click="btnHuy_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

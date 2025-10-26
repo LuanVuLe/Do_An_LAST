@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="z7036210694201_63d938153e736b3845a0879b23f5abd4.jpg" />
+    <None Remove="Ảnh chụp màn hình 2025-09-21 230338.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="z7036210694201_63d938153e736b3845a0879b23f5abd4.jpg" />
+    <Resource Include="Ảnh chụp màn hình 2025-09-21 230338.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="imagee\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="7.0.0-preview1.25257.1" />
+  </ItemGroup>
+
+</Project>
